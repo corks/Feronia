@@ -31,7 +31,7 @@ nitpicky = True
 project = "Feronia"
 
 # A copyright statement in the style '2008, Author Name'.
-copyright = "2012, Michael Rodriguez"
+copyright = "2012, Corks Development Group"
 
 # The major project version, used as the replacement for |version|. For example,
 # for the Python documentation, this may be something like 2.6.
