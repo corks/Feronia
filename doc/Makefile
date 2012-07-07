@@ -2,8 +2,8 @@
 
 help:
 	@echo "Use \`make <target>' such that <target> is one of the following:"
-	@echo "- html: Generates developers documentation in HTML format."
-	@echo "- pdf:  Generates developers documentation in PDF format."
+	@echo "- html: Generate documentation in HTML format."
+	@echo "- pdf:  Generate documentation in PDF format."
 
 clean:
 	rm -rf build/*
