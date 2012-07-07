@@ -53,6 +53,10 @@ public:
     /// derived class.
     virtual void exit_loop() = 0;
 
+    /// Destructs the object. This function must be implemented by the derived
+    /// class.
+    virtual ~AbstractNetwork() = 0;
+
 protected:
     bool running;
     AbstractNetwork();
