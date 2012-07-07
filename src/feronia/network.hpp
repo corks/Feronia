@@ -30,3 +30,30 @@
 /// platform-specific network code.
 
 #pragma once
+
+#include <string>
+
+class AbstractNetwork
+{
+public:
+    /// Listens for incoming connections. This function must be implemented by
+    /// the derived class.
+    ///
+    /// @param port The port to listen on.
+    /// @param ip   The IP to bind to. If this argument is not passed,
+    ///             "localhost" will be used.
+    virtual void listen(const int port,
+                        const std::string& ip = "localhost") = 0;
+
+    /// Polls the listeners. This function must be implemented by the derived
+    /// class.
+    virtual void main_loop() = 0;
+
+    /// Stops polling the listeners. This function must be implemented by the
+    /// derived class.
+    virtual void exit_loop() = 0;
+
+protected:
+    bool running;
+    AbstractNetwork();
+};
